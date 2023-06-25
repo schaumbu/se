@@ -1,0 +1,93 @@
+.gradient-background {
+    background: linear-gradient(to bottom, #4B79A1, #283E51);
+}
+
+.icon-size {
+    font-size: 48px;
+}
+
+.clear-btn {
+    padding: 0;
+    margin-left: -40px !important;
+    z-index: 100 !important;
+}
+
+.sm-icon-size {
+    font-size: 24px;
+}
+
+.glowing-border {
+    border-radius: 50rem;
+
+    outline:none;
+    border: 1px solid #4195fc;
+    box-shadow: 0px 0px 14px #4195fc;
+    -moz-box-shadow: 0px 0px 14px #4195fc;
+    -webkit-box-shadow: 0px 0px 14px #4195fc;
+}
+
+.glowing-border:focus {
+    outline:none;
+    border: 1px solid #4195fc;
+    box-shadow: 0px 0px 14px #4195fc;
+    -moz-box-shadow: 0px 0px 14px #4195fc;
+    -webkit-box-shadow: 0px 0px 14px #4195fc;
+}
+
+.mt-25 {
+    margin-top: 15rem
+}
+
+.max-width-600 {
+    max-width: 100%;
+    width: 600px;
+}
+
+.max-width-1300 {
+    max-width: 100%;
+    width: 1300px;
+}
+
+.mr-3 {
+    margin-right: 1rem
+}
+
+.btn-3 {
+    width: 10rem
+}
+
+.switch-label {
+    width: auto;
+}
+
+@media (max-width: 640px) {
+    .btn-3 {
+        width: 100%;
+    }
+    .mr-3 {
+        margin-right: 0;
+        margin-bottom: 0.5rem
+    }
+    .mt-25 {
+        margin-top: 3rem
+    }
+    .switch-label {
+        width: min-content;
+    }
+}
+
+.input-bg {
+    background-color: #dee2e6;
+}
+
+.output-bg {
+    background-color: #dee2e6;
+}
+
+.btn-col {
+    background-color: #1d4ed8;
+}
+
+.custom-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
