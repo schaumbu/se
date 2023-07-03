@@ -71,12 +71,9 @@ const IndexPage = () => {
     };
 
     return (
-        <div className="container-fluid d-flex flex-column min-vh-100 gradient-background">
+        <div className="container-fluid d-flex flex-column min-vh-100 fancy-bg">
             <div className="text-center d-flex flex-column align-items-center mt-25">
-                <div className="book-icon">
-                    <FaBook className="icon-size"/>
-                </div>
-                <h1 className="mb-4 mt-2">Einfach Verstehen</h1>
+                <h1 className="mb-5 mt-2 brand-name">Einfach Verstehen</h1>
                 <form id="searchForm" className="max-width-600" onSubmit={handleSubmit}>
                     <div className="input-group mb-3 rounded-pill position-relative">
                         <Autosuggest
@@ -100,7 +97,7 @@ const IndexPage = () => {
                             inputProps={inputProps}
                             theme={{
                                 container: 'autosuggest max-width-600',
-                                input: 'form-control glowing-border input-bg',
+                                input: 'form-control search-input-border input-bg',
                                 suggestionsContainer: 'dropdown',
                                 suggestionsList: `dropdown-menu show max-width-600 input-bg`,
                                 suggestion: 'dropdown-item',
@@ -108,20 +105,20 @@ const IndexPage = () => {
                             }}
                         />
                         {searchTerm &&
-                            <button type="button" onClick={handleClearSearch} className="btn bg-transparent clear-btn">
-                                <FaTimes className="sm-icon-size"/>
+                            <button type="button" onClick={handleClearSearch} className="btn bg-transparent clear-btn book-icon">
+                                <FaTimes className="xs-icon-size close-button"/>
                             </button>}
                     </div>
                     <div className="d-flex justify-content-center">
                         <div className="input-group w-auto">
                             <button ref={submitButtonRef} type="submit"
-                                    className="btn btn-col btn-primary rounded-pill mr-3 btn-3">
+                                    className="btn btn-custom-main shadow rounded-pill mr-3 btn-3">
                                 Suchen
                             </button>
                             <button
                                 type="button"
                                 onClick={handleRandomArticle}
-                                className="btn btn-col btn-primary rounded-pill btn-3"
+                                className="btn btn-custom-secondary shadow rounded-pill btn-3"
                             >
                                 Zufälliger Artikel
                             </button>
@@ -140,13 +137,9 @@ const IndexPage = () => {
             ) : (
                 showResult && (
                     <div className="d-flex justify-content-center">
-                        <div className="card my-3 rounded max-width-1300 output-bg animate__animated animate__fadeInUp">
+                        <div className="card my-3 rounded max-width-1300 output-bg output-box animate__animated animate__fadeIn">
                             <div className="card-header d-flex align-items-center justify-content-between">
-                                <h5 className="mb-0">Suchergebnis</h5>
                                 <div className="d-flex">
-                                    <label className="form-check-label mx-3 switch-label" htmlFor="customSwitch">
-                                        {checked ? "Einfache Sprache" : "Original"}
-                                    </label>
                                     <div className="form-check form-switch d-flex align-self-center">
                                         <input
                                             className="form-check-input"
@@ -156,6 +149,9 @@ const IndexPage = () => {
                                             onChange={handleSwitchChange}
                                         />
                                     </div>
+                                    <label className="form-check-label mx-1 switch-label align-content-end" htmlFor="customSwitch">
+                                        {"Einfache Sprache"}
+                                    </label>
                                 </div>
                             </div>
                             <div className="card-body">
@@ -188,7 +184,7 @@ const IndexPage = () => {
                                 </div>
                                 <div className="modal-body">
                                     <h5>Verantwortlich für den Inhalt:</h5>
-                                    <p>Arne Schaumburg</p>
+                                    <p>Arne Schaumburg, Tjark Homann, Malte Rathjens, Stephan Haussmann, Hannes Hinniger</p>
                                     <p>Kontakt: arne.schaumburg@ovgu.de</p>
                                 </div>
                                 <div className="modal-footer">
