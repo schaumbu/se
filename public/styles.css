@@ -4,6 +4,10 @@
   background: #609966;
   color: white;
 }
+.btn-custom-main:hover {
+  background: #568c5b;
+  color: #fff
+}
 .btn-custom-secondary {
   background: #eaeaea;
   opacity: 0.95;

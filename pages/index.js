@@ -130,7 +130,7 @@ const IndexPage = () => {
             </div>
             {loading ? (
                 <div className="d-flex justify-content-center loading-container mt-5">
-                    <div className="spinner-border text-black" role="status">
+                    <div className="spinner-border text-white" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </div>
                 </div>
